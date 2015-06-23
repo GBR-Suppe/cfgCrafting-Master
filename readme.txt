@@ -5,7 +5,7 @@ What is cfgCrafting ?
 
 Download:
 - cfgCraftinglist by GBR Suppe (Custom Part is marked in the cfgCrafting.hpp)
-https://github.com/G...Crafting-Master
+https://github.com/GBR-Suppe/cfgCrafting-Master
 
 Install:
 - Add the cfgCrafting.hpp in your epoch.Mission
