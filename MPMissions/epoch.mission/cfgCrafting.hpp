@@ -27,10 +27,6 @@ class CfgCrafting
 	{
 		recipe[] = { "ItemCoolerE", "CookedSheep_EPOCH", "sweetcorn_epoch" };
 	};
-	class CircuitParts: Default
-	{
-		usedIn[] = {"EnergyPack","EnergyPackLg","KitPlotPole"};
-	};
 	class EnergyPack: Default
 	{
 		usedIn[] = {"EnergyPackLg"};
@@ -47,10 +43,6 @@ class CfgCrafting
 	{
 		usedIn[] = {"ItemScraps"};
 	};
-	class Pelt_EPOCH: Default
-	{
-		usedIn[] = {"KitTiPi"};
-	};
 	class ItemRock : Default
 	{
 		usedIn[] = { "KitFirePlace" , "MeleeMaul", "CrudeHatchet" };
@@ -63,11 +55,6 @@ class CfgCrafting
 	class ItemKiloHemp : Default
 	{
 		usedIn[] = { "ItemRope" };
-	};	
-	class ItemRope: Default
-	{
-		usedIn[] = {"WoodClub","MeleeMaul","CrudeHatchet"};
-		recipe[] = {{ "ItemKiloHemp",1 }};
 	};
 	class MeleeMaul : Default
 	{
@@ -138,9 +125,9 @@ class CfgCrafting
 	};
 	class CircuitParts : Default
 	{
-		usedIn[] = { "NVG_EPOCH", "optic_tws" };
+		usedIn[] = { "NVG_EPOCH", "optic_tws", "EnergyPack", "EnergyPackLg", "KitPlotPole"};
 	};
-		class V_10_EPOCH : Default
+	class V_10_EPOCH : Default
 	{
 		recipe[] = { {"Pelt_EPOCH",1}, {"ItemRope",1} };
 	};
@@ -303,7 +290,7 @@ class CfgCrafting
 		nearby[] = {{"noclass", {"barrelwater_f.p3d", "water_source_f.p3d", "pumpa.p3d", "misc_wellpump.p3d"}, 3, 1, "Water Source","water"}};
 		recipe[] = { "emptyjar_epoch" };
 	};
-	class clean_water_epoch: Default
+	class clean_water_epoch : Default
 	{
 		usedIn[] = {"EnergyPack"};
 		nearby[] = {{ "fire",{ "ALL" },3,1,"Fire","fire" }};
@@ -369,4 +356,5 @@ class CfgCrafting
 	{
 		recipe[] = {{"ItemCorrugatedLg",2}, {"CircuitParts",2} };
 	};
+
 };
