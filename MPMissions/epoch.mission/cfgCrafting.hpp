@@ -96,7 +96,7 @@ class CfgCrafting
 	};
 	class ItemCorrugated : Default
 	{
-		usedIn[] = {"KitShelf","ItemCorrugatedLg", "V_39_EPOCH"};
+		usedIn[] = {"KitShelf","ItemCorrugatedLg", "V_39_EPOCH", "VehicleRepairLg"};
 		nearby[] = { { "fire", { "ALL" }, 3, 1, "Fire", "fire" } };
 		recipe[] = { { "ItemScraps", 2 } };
 	};
@@ -303,7 +303,7 @@ class CfgCrafting
 	};
 	class ItemCorrugatedLg : Default
 	{
-		usedIn[] = { "VehicleRepairLg", "KitPlotPole" };
+		usedIn[] = { "KitPlotPole" };
 		recipe[] = { { "ItemCorrugated", 3 } };
 	};
 	class PartPlankPack : Default
@@ -356,5 +356,5 @@ class CfgCrafting
 	{
 		recipe[] = {{"ItemCorrugatedLg",2}, {"CircuitParts",2} };
 	};
-
 };
+
